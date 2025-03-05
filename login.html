@@ -12,7 +12,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, black, #c23400);
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.89) , rgb(112, 27, 27),#c23400,#c20000c7);
             color: white;
             display: flex;
             justify-content: center;
@@ -75,13 +75,17 @@
         .btn-secondary:hover {
             background: #555;
         }
+        .logincad{
+            text-align: right;
+            font-size: 78%;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">Fomepédia</div>
         <h2 style="color: #FF4500;">Login</h2>
-        <form action="submit_login.php" method="POST">
+        <form action="index.html" method="get">
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
@@ -89,6 +93,9 @@
             <div class="form-group">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="logincad">
+            <a href="./cadastro.html" style="color: white"> Cadastre-se</a>
             </div>
             <button type="submit" class="btn">Entrar</button>
         </form>
